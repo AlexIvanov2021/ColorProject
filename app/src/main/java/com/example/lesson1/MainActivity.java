@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button red , green , blue;
     ImageView imageView;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         blue = findViewById(R.id.blue);
         green = findViewById(R.id.green);
         imageView = findViewById(R.id.image);
+        textView = findViewById(R.id.text);
 
         red.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 imageView.setBackgroundResource(R.color.red);
+                textView.setText("Красный");
 
             }
         });
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
           @Override
           public void onClick(View view) {
               imageView.setBackgroundResource(R.color.blue);
+              textView.setText("Синий");
 
           }
       });
@@ -40,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void setGreenColor(View view){
         imageView.setBackgroundResource(R.color.teal_200);
+        textView.setText("Зелёный");
 
     }
 
