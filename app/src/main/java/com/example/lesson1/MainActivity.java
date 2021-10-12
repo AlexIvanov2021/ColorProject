@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("Зелёный");
         pic.setBackgroundResource(R.drawable.ic_baseline_bedtime_24);
 
-//sasha bobik
+//sasha bobik ,sam tu bobik kozel
     }
 
 }
